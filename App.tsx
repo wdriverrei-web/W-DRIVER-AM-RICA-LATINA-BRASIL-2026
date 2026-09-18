@@ -41,9 +41,10 @@ import {
   getStoredPartnerAds, setStoredPartnerAds,
   getStoredMilestones, setStoredMilestones,
   getStoredReceipts, setStoredReceipts,
-  generateRideReceipt, 
+  generateRideReceipt,
 } from './supabase';
-import {'./storage';
+
+import {
   isSupabaseConfigured,
   syncRideToCloud,
   fetchActiveRideFromCloud,
@@ -60,6 +61,7 @@ import {'./storage';
   subscribeToSosAlerts,
   syncReceiptToCloud,
   fetchReceiptsFromCloud,
+} from './storage';
 } from './supabase';
 import { initialDemoUsers } from './mockData';
 import { WLogo } from './components/WLogo';
