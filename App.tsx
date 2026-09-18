@@ -41,8 +41,9 @@ import {
   getStoredPartnerAds, setStoredPartnerAds,
   getStoredMilestones, setStoredMilestones,
   getStoredReceipts, setStoredReceipts,
-  generateRideReceipt,
-}from './storage';
+  generateRideReceipt, 
+} from './supabase'
+  ;storage';
 import {
   isSupabaseConfigured,
   syncRideToCloud,
