@@ -42,7 +42,7 @@ import {
   getStoredMilestones, setStoredMilestones,
   getStoredReceipts, setStoredReceipts,
   generateRideReceipt,
-} from './storage';
+}from './storage';
 import {
   isSupabaseConfigured,
   syncRideToCloud,
