@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --bg-escuro: #0a0b0d;
+  --bg-sidebar: #0f1115;
+  --bg-card: #14171c;
+  --bg-card-hover: #1a1f26;
+  --verde-pera: #83d600;
+  --verde-pera-light: #8bc34a;
+  --verde-pera-glow: rgba(131, 214, 0, 0.18);
+  --verde-pera-border: rgba(131, 214, 0, 0.35);
+  --borda-suave: #1e242b;
+  --borda-prata: #3a424d;
+  --borda-metalica: linear-gradient(135deg, #71717a 0%, #27272a 50%, #52525b 100%);
+  --texto-branco: #ffffff;
+  --texto-muted: #94a3b8;
+  --amarelo-alerta: #ffc107;
+  --vermelho-alerta: #ef4444;
+  --taxa-central: 10;
+  --fonte: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-escuro);
+  color: var(--texto-branco);
+  font-family: var(--fonte);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0b0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #272f3a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--verde-pera);
+}
+
+/* Metallic badge styling */
+.metallic-badge {
+  background: linear-gradient(145deg, #2a313c, #14171c);
+  border: 1px solid var(--borda-prata);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.metallic-chrome-border {
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #d4d4d8 0%, #3f3f46 45%, #a1a1aa 75%, #27272a 100%) 1;
+}
+
+/* Pulse radar for map */
+@keyframes pulseRadar {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+.animate-radar {
+  animation: pulseRadar 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(131, 214, 0, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(131, 214, 0, 0.55);
+  }
+}
+
+.glow-active {
+  animation: pulseGlow 2.5s ease-in-out infinite;
+}
+
+/* Shimmer animation for progress bar */
+@keyframes shimmerProgress {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmerProgress 2.2s infinite ease-in-out;
+}

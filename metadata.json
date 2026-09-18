@@ -1,0 +1,10 @@
+{
+  "name": "W-DRIVER AMÉRICA LATINA BRASIL JOÃO PESSOA-PB",
+  "description": "Quem escolhe preço corre riscos. Quem escolhe a W-DRIVER escolhe chegar bem! Plataforma oficial de mobilidade urbana, viagens avulsas com tarifas transparentes, contratos de transporte pré-pagos sem dinâmica, W-Delivery e Central Administrativa.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
