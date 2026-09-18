@@ -60,7 +60,7 @@ import {
   subscribeToSosAlerts,
   syncReceiptToCloud,
   fetchReceiptsFromCloud,
-} from './lib/supabase';
+} from './supabase';
 import { initialDemoUsers } from './mockData';
 import { WLogo } from './components/WLogo';
 import { PassengerPortal } from './components/PassengerPortal';
